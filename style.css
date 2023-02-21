@@ -1,0 +1,110 @@
+header{
+    display: flex;
+    justify-content: center;
+   
+}
+
+header p{
+    position: relative;
+    margin-top: 125px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: beige;
+}
+
+#texto1{
+    position: relative;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+
+.imagemLogo{
+    position: relative;
+    margin-left: 170px;
+    height: 150px;
+    width: 150px;
+    top: 100px;
+    border-radius: 50%;
+    border-style: hidden;
+    box-shadow: 10px 10px 10px 10px;
+}
+
+
+.imagens{
+    height: 50px;
+    width: 50px;
+}
+
+.sectionPrimaria .imagens:hover{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.sectionPrimaria ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+   
+}
+
+.sectionPrimaria{
+    position: relative;
+    top: 10px;
+}
+
+.sectionPrimaria li{
+    position: relative;
+    padding: 10px;
+}
+
+/* --------------------------------------------------------------Section Secundaria-------------------------------------------------------------------------- */
+.sectionSecundaria{
+    position: relative;
+    top: 30px;
+    left: 33%;
+    width: 40%;
+    border: 1px solid red;
+}
+
+
+.sectionSecundaria ul{
+    list-style: none;
+}
+
+.sectionSecundaria li{
+    width: 500px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px;
+}
+
+.sectionSecundaria a{
+    /* border: 1px solid red; */
+    position: absolute;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: black;
+    font-family: italic;
+}
+
+.sectionSecundaria img{
+    position: relative;
+    left: 10px;
+}
+
+/* --------------------------------------------------------------MediaQuery-------------------------------------------------------------------------- */
+
+@media(max-width:750px) {
+    .sectionSecundaria ul li{width: 100%;}
+}
+@media(max-width:750px) {
+    .sectionSecundaria ul li a{font-size: 20px; align-self: center;}
+}
+@media(max-width:750px) {
+    .sectionSecundaria ul li img{align-items: center;}
+}
