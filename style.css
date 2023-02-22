@@ -1,7 +1,7 @@
 header{
     display: flex;
     justify-content: center;
-   
+    border-top: 8px solid #A1AE8D;
 }
 
 header p{
@@ -10,13 +10,16 @@ header p{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
    font-weight: bold;
-   color: beige;
+   color: #F2F2F2;
+   box-shadow: 5px 5px 5px 5px #100126;
+   border-radius: 10px;
 }
 
 #texto1{
     position: relative;
     margin-top: 0px;
     font-size: 20px;
+    width: 90%;
 }
 
 
@@ -27,14 +30,18 @@ header p{
     width: 150px;
     top: 100px;
     border-radius: 50%;
-    border-style: hidden;
-    box-shadow: 10px 10px 10px 10px;
+    box-shadow:#100126 5px 5px 5px 5px;
 }
 
+.sectionPrimaria .imagens{
+    box-shadow:#100126 0px 15px 15px 0px;
+}
 
 .imagens{
     height: 50px;
     width: 50px;
+    border-radius: 200px;
+  
 }
 
 .sectionPrimaria .imagens:hover{
@@ -43,11 +50,15 @@ header p{
     cursor: pointer;
 }
 
+.sectionPrimaria li{
+    position: relative;
+    padding: 10px;
+}
+
 .sectionPrimaria ul{
     display: flex;
     list-style: none;
     justify-content: center;
-   
 }
 
 .sectionPrimaria{
@@ -55,10 +66,6 @@ header p{
     top: 10px;
 }
 
-.sectionPrimaria li{
-    position: relative;
-    padding: 10px;
-}
 
 /* --------------------------------------------------------------Section Secundaria-------------------------------------------------------------------------- */
 .sectionSecundaria{
@@ -66,7 +73,7 @@ header p{
     top: 30px;
     left: 33%;
     width: 40%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
@@ -76,9 +83,9 @@ header p{
 
 .sectionSecundaria li{
     width: 500px;
-    background-color: aliceblue;
+    background-color:  #6D3E8C;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 5px;
+    box-shadow:#100126 5px 5px 5px 5px;
 }
 
 .sectionSecundaria a{
@@ -88,7 +95,7 @@ header p{
     margin-left: 30px;
     margin-top: 10px;
     font-size: 30px;
-    color: black;
+    color:  #F2F2F2;
     font-family: italic;
 }
 
@@ -103,8 +110,29 @@ header p{
     .sectionSecundaria ul li{width: 100%;}
 }
 @media(max-width:750px) {
-    .sectionSecundaria ul li a{font-size: 20px; align-self: center;}
+    .sectionSecundaria ul li a{font-size: 20px; align-self: center; font-weight: bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 }
 @media(max-width:750px) {
     .sectionSecundaria ul li img{align-items: center;}
 }
+/* --------------------------------------------------------------400px-------------------------------------------------------------------------- */
+
+@media(max-width:400px) {
+    .sectionSecundaria ul li a{font-size: 17px; align-self: center;}
+}
+@media(max-width:400px) {
+    .sectionSecundaria ul li {width: 150%; margin-left: -50px;}
+}
+
+@media(max-width:400px) {
+    .sectionPrimaria .imagens {width: 40px; height: 40px; }
+}
+
+@media(max-width:400px) {
+    .imagemLogo{margin-left: 100px; }
+}
+
+@media(max-width:400px) {
+    header p{margin-left: 10px; }
+}
+
