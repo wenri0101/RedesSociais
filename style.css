@@ -15,6 +15,11 @@ header p{
    border-radius: 10px;
 }
 
+header div{
+    position: relative;
+   width: 700px;
+}
+
 #texto1{
     position: relative;
     margin-top: 0px;
@@ -25,7 +30,7 @@ header p{
 
 .imagemLogo{
     position: relative;
-    margin-left: 170px;
+    margin-left: 250px;
     height: 150px;
     width: 150px;
     top: 100px;
@@ -104,6 +109,81 @@ header p{
     left: 10px;
 }
 
+#stack{
+    position: relative;
+    float: right;
+    clear: both;
+    right: 40px;
+    bottom: -20px;
+}
+
+#stack h3{
+    color: #A1AE8D;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#stack ul{
+    position: relative;
+    display: flex;
+}
+
+#stack ul li{
+    position: relative;
+    list-style: none;
+    padding: 5px;
+    color:#F2F2F2;
+}
+
+#copy{
+    position: relative;
+    float: left;
+    display: inline;
+    bottom: -50px;
+    width: 90%;
+    left: 5%;
+}
+
+#copy p{
+    position: relative;
+    left: -140px;
+    margin-top: 20px;
+    color: #A1AE8D;
+}
+
+#copy hr {
+    color: #A1AE8D;
+}
+
+#sobre{
+    position: relative;
+    left: 20px;
+}
+
+#sobre h2{
+    color: #A1AE8D;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#sobre p{
+    display: block;
+    color: #F2F2F2;
+}
+
+#video iframe{
+    position: relative;
+    /* border: 3px solid green; */
+    width: 640px;
+    height: 360px;
+    margin-top:10em;
+    margin-left: 25em;
+    margin-bottom: 10em;
+    border-radius: 20px;
+    border-top: 3px solid #A1AE8D;
+    box-shadow:#100126 5px 5px 5px 5px;
+}
+
 /* --------------------------------------------------------------MediaQuery-------------------------------------------------------------------------- */
 
 @media(max-width:750px) {
@@ -115,24 +195,54 @@ header p{
 @media(max-width:750px) {
     .sectionSecundaria ul li img{align-items: center;}
 }
+
+@media(max-width:700px) {
+    .imagemLogo{margin-left: 35%; margin-top: -90px; }
+}
+
+@media(max-width:700px) {
+    #video iframe{margin-left: 15%; margin-top: 90px; width: 500px; height: 280px;}
+}
+
+
 /* --------------------------------------------------------------400px-------------------------------------------------------------------------- */
 
 @media(max-width:400px) {
-    .sectionSecundaria ul li a{font-size: 17px; align-self: center;}
+    .sectionSecundaria ul li a{font-size: 18px; align-self: center;}
 }
 @media(max-width:400px) {
-    .sectionSecundaria ul li {width: 150%; margin-left: -50px;}
+    .sectionSecundaria ul li {width: 180%; margin-left: -80px;}
+}
+@media(max-width:400px) {
+    .sectionSecundaria {margin-left: -25px;}
 }
 
 @media(max-width:400px) {
-    .sectionPrimaria .imagens {width: 40px; height: 40px; }
+    .sectionPrimaria ul {margin-left: -80px;}
 }
 
 @media(max-width:400px) {
-    .imagemLogo{margin-left: 100px; }
+    .sectionPrimaria .imagens {width: 30px; height: 30px; margin-right: -5px;}
+}
+
+@media(max-width:400px) {
+    .imagemLogo{margin-left: 70px; margin-top: -90px; }
 }
 
 @media(max-width:400px) {
     header p{margin-left: 10px; }
 }
 
+@media(max-width:400px) {
+    header div{width: 70%; margin-right: 100px;}
+}
+@media(max-width:400px) {
+    header div p {font-size: 90%;}
+}
+
+@media(max-width:400px) {
+    #video iframe{margin-left: 3%; margin-top: 90px; width: 350px; height: 250px;}
+}
+@media(max-width:400px) {
+   footer, ul, li, div, p{width: 70%; height: 70%; margin: 10px;}
+}
